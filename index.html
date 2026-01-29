@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduTrack | Daily Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <h2>History</h2>
+            <div id="historySidebar" class="history-list"></div>
+        </aside>
+
+        <div class="container">
+            <header>
+                <h1>My Learning Dashboard</h1>
+                <div class="progress-container">
+                    <div class="progress-ring">
+                        <span id="progress-text">0%</span>
+                    </div>
+                    <p id="progress-date">Today's Progress</p>
+                </div>
+            </header>
+
+            <section class="task-section">
+                <div class="input-group">
+                    <input type="text" id="taskInput" placeholder="Add a new learning goal...">
+                    <button onclick="addTask()">Add Task</button>
+                </div>
+                <ul id="taskList"></ul>
+                <button id="clearBtn" class="clear-btn" onclick="clearTasks()">Clear All Tasks</button>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
